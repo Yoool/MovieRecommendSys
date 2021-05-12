@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>MovieRecommendSystem</artifactId>
-        <groupId>com.atguigu</groupId>
+        <groupId>com.recommend</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -12,15 +12,21 @@
     <artifactId>recommender</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <!--数据加载模块-->
         <module>DataLoader</module>
-        <module>StatisticsRecommender</module>
+        <!--离线统计推荐模块-->
+        <module>StatsRecommender</module>
+        <!--基于隐语义模型的离线推荐模块-->
         <module>OfflineRecommender</module>
-        <module>StreamingRecommender</module>
+        <!--实时推荐模块-->
+        <module>OnlineRecommender</module>
+        <!--实时推荐消息缓冲服务-->
+        <module>KafkaStream</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
-            <!-- 引入Spark相关的Jar包 -->
+            <!--Spark相关 -->
             <dependency>
                 <groupId>org.apache.spark</groupId>
                 <artifactId>spark-core_2.11</artifactId>
@@ -56,7 +62,6 @@
 
     <build>
         <plugins>
-            <!-- 父项目已声明该plugin，子项目在引入的时候，不用声明版本和已经声明的配置 -->
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>

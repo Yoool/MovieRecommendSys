@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/recommender/DataLoader/DataLoader.iml" filepath="$PROJECT_DIR$/recommender/DataLoader/DataLoader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recommender/KafkaStream/KafkaStream.iml" filepath="$PROJECT_DIR$/recommender/KafkaStream/KafkaStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MovieRecommendSystem.iml" filepath="$PROJECT_DIR$/MovieRecommendSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recommender/OfflineRecommender/OfflineRecommender.iml" filepath="$PROJECT_DIR$/recommender/OfflineRecommender/OfflineRecommender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recommender/OnlineRecommender/OnlineRecommender.iml" filepath="$PROJECT_DIR$/recommender/OnlineRecommender/OnlineRecommender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recommender/StatsRecommender/StatsRecommender.iml" filepath="$PROJECT_DIR$/recommender/StatsRecommender/StatsRecommender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recommender/recommender.iml" filepath="$PROJECT_DIR$/recommender/recommender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movierec/seckill.iml" filepath="$PROJECT_DIR$/movierec/seckill.iml" />
+    </modules>
+  </component>
+</project>

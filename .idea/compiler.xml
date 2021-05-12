@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="StatsRecommender" />
+        <module name="DataLoader" />
+        <module name="KafkaStream" />
+        <module name="OnlineRecommender" />
+        <module name="OfflineRecommender" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="businessServer" target="1.8" />
+      <module name="ContentRecommender" target="1.8" />
+      <module name="DataLoader" target="1.8" />
+      <module name="KafkaStream" target="1.8" />
+      <module name="KafkaStreaming" target="1.8" />
+      <module name="MovieRecommendSystem" target="1.8" />
+      <module name="OfflineRecommender" target="1.8" />
+      <module name="OnlineRecommender" target="1.8" />
+      <module name="recommender" target="1.8" />
+      <module name="seckill" target="1.8" />
+      <module name="StatsRecommender" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="seckill" options="-parameters" />
+    </option>
+  </component>
+</project>
